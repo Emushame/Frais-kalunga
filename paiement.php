@@ -185,15 +185,11 @@ $mois = [
                             <div class="method-selector">
                                 <label class="method-option">
                                     <input type="radio" name="method" value="mpesa" required>
-                                    <div class="op-box mpesa">M-PESA</div>
-                                </label>
-                                <label class="method-option">
-                                    <input type="radio" name="method" value="orange">
-                                    <div class="op-box orange">ORANGE</div>
+                                    <div class="op-box mpesa">M-PESA RDC</div>
                                 </label>
                                 <label class="method-option">
                                     <input type="radio" name="method" value="airtel">
-                                    <div class="op-box airtel">AIRTEL</div>
+                                    <div class="op-box airtel">AIRTEL MONEY</div>
                                 </label>
                             </div>
                         </div>
