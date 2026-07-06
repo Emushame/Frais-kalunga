@@ -1,0 +1,178 @@
+/* --- Variables Thème ITI KALUNGA --- */
+:root {
+    --primary-blue: #2563eb;
+    --accent-blue: #60a5fa;
+    --dark-bg: #0f172a;
+    --glass: rgba(255, 255, 255, 0.07);
+    --border: rgba(255, 255, 255, 0.15);
+    --text-muted: #94a3b8;
+}
+
+/* --- Layout du Formulaire --- */
+.payment-container {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.payment-card {
+    background: var(--glass);
+    backdrop-filter: blur(15px);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.payment-header h3 {
+    font-size: 1.4rem;
+    color: #fff;
+    margin-bottom: 8px;
+}
+
+.payment-header p {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    margin-bottom: 25px;
+}
+
+/* --- Groupes de formulaires --- */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    color: var(--accent-blue);
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.form-group input, .form-group select {
+    width: 100%;
+    padding: 12px 15px;
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    color: white;
+    outline: none;
+    transition: 0.3s;
+}
+
+.form-group input:focus {
+    border-color: var(--accent-blue);
+    box-shadow: 0 0 15px rgba(37, 99, 235, 0.2);
+}
+
+/* --- Sélecteur de Motif (Cards) --- */
+.fee-selector {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.fee-selector input[type="radio"] {
+    display: none;
+}
+
+.fee-item {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--border);
+    padding: 15px;
+    border-radius: 12px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fee-item i {
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+    color: var(--text-muted);
+}
+
+.fee-selector input[type="radio"]:checked + .fee-item {
+    background: rgba(37, 99, 235, 0.2);
+    border-color: var(--accent-blue);
+}
+
+.fee-selector input[type="radio"]:checked + .fee-item i {
+    color: var(--accent-blue);
+}
+
+/* --- Sélecteur d'opérateurs (Logos) --- */
+.method-selector {
+    display: flex;
+    gap: 15px;
+}
+
+.method-option {
+    flex: 1;
+    background: white; /* Fond blanc pour que les logos ressortent */
+    padding: 10px;
+    border-radius: 12px;
+    cursor: pointer;
+    border: 3px solid transparent;
+    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.method-option img {
+    height: 40px;
+    object-fit: contain;
+}
+
+.method-option:has(input:checked) {
+    border-color: var(--accent-blue);
+    transform: scale(1.05);
+}
+
+.method-option input {
+    display: none;
+}
+
+/* --- Bouton de validation --- */
+.confirm-btn {
+    width: 100%;
+    padding: 15px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(135deg, var(--primary-blue), #4f46e5);
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.confirm-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(37, 99, 235, 0.4);
+}
+
+/* --- Sidebar Info --- */
+.info-card {
+    background: rgba(37, 99, 235, 0.1);
+    border: 1px solid var(--border);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.info-card h4 {
+    color: var(--accent-blue);
+    margin-bottom: 15px;
+}
+
+.info-card p {
+    font-size: 0.85rem;
+    line-height: 1.6;
+    color: #cbd5e1;
+    margin-bottom: 10px;
+}
